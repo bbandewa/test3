@@ -1,0 +1,14 @@
+apply plugin : 'java'
+apply plugin : 'application'
+
+apply plugin : 'sonar-runner'
+
+mainClassName = 'Demo'
+
+sonarRunner{
+	sonarProperties{
+		property "sonar.projectName", "bankApp"
+		property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
+	}
+
+}
